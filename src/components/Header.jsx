@@ -88,7 +88,7 @@ export default function Header() {
   }, []);
   return (
     <>
-      <div className="p-5 flex justify-between items-center">
+      <div className="px-5 py-2 flex justify-between items-center">
         <Logo />
         <div className="hidden lg:block">
           <NavList />

@@ -35,10 +35,10 @@ export default function HomeInterior() {
   return (
     <>
       <div className="p-10 flex flex-col lg:gap-10 gap-5">
-        <h2 className="text-[20px] lg:text-[25px] font-bold px-5">
+        <h2 className="text-[20px] lg:text-[25px] font-bold lg:px-5">
           Home Interiors Made Easy
         </h2>
-        <p className="px-5 text-[14px] lg:text-[18px] leading-8 font-[400] text-[#222]">
+        <p className="lg:px-5 text-[14px] lg:text-[18px] lg:leading-8 font-[400] text-[#222]">
           You book a consultation, get guided by one of the 400+ top-notch
           interior designers, and we take care of the rest, from start to
           finish. We have done it for more than 10,000 homes already.
