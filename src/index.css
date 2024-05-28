@@ -7,3 +7,15 @@ body {
   margin: 0;
   padding: 0;
 }
+/* 
+.slick-arrow  {
+  background-color: red;
+  color: blue;
+} */
+
+.slick-prev:before, .slick-next:before {
+  color: #189BA6;
+  margin-right: -10px;
+  margin-left: -10px;
+  font-size: 30px;
+}

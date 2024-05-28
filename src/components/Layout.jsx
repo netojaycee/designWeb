@@ -4,8 +4,10 @@ import Header from "./Header";
 const Layout = () => {
   return (
     <>
-      <Header />
-      <Outlet />
+      <div className="overflow-x-hidden">
+        <Header />
+        <Outlet />
+      </div>
     </>
   );
 };

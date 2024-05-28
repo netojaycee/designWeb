@@ -17,9 +17,9 @@ export default function HomesDelivered() {
           </p>
         </div>
 
-        <div className="lg:relative lg:p-5">
+        <div className="lg:relative lg:p-5 flex lg:flex-row flex-col justify-end">
  
-  <img src={delivered2} alt="" className="lg:absolute lg:right-0 lg:top-0" />
+  <img src={delivered2} alt="" className="" />
   <p className="z-[9999] lg:absolute lg:p-10 lg:bg-white lg:top-[200px] lg:-left-[60px] lg:text-[25px] lg:w-[40%] text-center text-[12px] md:text-[14px]">
     Karthikeyan And Gauthami’s 2 BHK Home In Mumbai
   </p>
