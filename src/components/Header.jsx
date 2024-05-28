@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "./Logo";
 import { Collapse, IconButton, Typography } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 function NavList() {
   return (
@@ -66,7 +68,7 @@ function NavList() {
       <hr className="border-primary lg:hidden" />
 
       <div className="hidden lg:block">
-        <IconButton />
+        <FaWhatsapp />
       </div>
       <button className="bg-primary p-2">Get Free Estimate</button>
     </ul>
