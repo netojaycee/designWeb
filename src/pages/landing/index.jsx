@@ -6,6 +6,10 @@ import HomesDelivered from "./components/HomesDelivered";
 import PopularDesigns from "./components/PopularDesigns";
 import Banner from "./components/Banner";
 import Why from "./components/Why";
+import Testimonial from "./components/Testimonial";
+import Suppliers from "./components/Suppliers";
+import Designers from "./components/Designers";
+import Guides from "./components/Guides";
 
 export default function Landing() {
   const [open, setOpen] = React.useState(false);
@@ -23,6 +27,10 @@ export default function Landing() {
       <PopularDesigns />
       <Banner />
       <Why />
+      <Testimonial />
+      <Suppliers />
+      <Designers />
+      <Guides />
       <BookingModal open={open} setOpen={setOpen} handleOpen={handleOpen} />
     </>
   );

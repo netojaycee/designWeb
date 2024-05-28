@@ -143,10 +143,11 @@ function Icon({ id, open }) {
 }
 
 export function AccordionMobile() {
-  const [open, setOpen] = React.useState();
+    const [open, setOpen] = React.useState(null);
 
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
-
+    const handleOpen = (index) => {
+      setOpen((prevOpen) => (prevOpen === index ? null : index));
+    };
   return (
     <>
       {data.map((item, index) => (
