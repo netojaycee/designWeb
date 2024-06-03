@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-      <div className="p-2 bg-gray-900 relative bottom-0 w-full">
+      <div className="p-2 bg-gray-900 w-full">
         <div className="flex lg:flex-row  flex-col justify-between w-[90%] mx-auto">
           <p className="text-white text-center">
             © 2023 G S E-Commerce Pvt Ltd. Privacy Policy | Terms of Use
