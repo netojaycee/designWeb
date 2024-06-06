@@ -573,7 +573,7 @@ export default function Projects() {
       </div>
 
       <div className="py-5 bg-white ">
-        <p className="text-xs w-2/3 mx-auto text-center">
+        <p className=" w-2/3 mx-auto text-center">
           Disclaimer: The images on our site are for reference only. Pleae
           contact us to discuss your specific needs and to tailor a unique
           design for you.

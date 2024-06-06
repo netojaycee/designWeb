@@ -1,100 +1,102 @@
 export default function Contact() {
   return (
     <div>
-      <div className="py-10">
-        <h2 className="text-xl font-bold px-5">Contact Us</h2>
-        <div className="text-center mx-auto w-3/4 mt-10">
-          <p className="font-semibold">We'd love to hear from you</p>
-          <p className="mt-3">
-            Whether your query is about features, materials, pricing or anything
-            else, our team is ready to answer all your questions.
-          </p>
-          <p className="mt-10">
-            For Press:{" "}
-            <span className="text-primary font-semibold">
-              corpcom@designcafe.com
-            </span>
-          </p>
-          <p>For Business Partnerships</p>
-          <p className="text-primary font-semibold">corpcom@designcafe.com</p>
-          <p>
-            For Jobs:{" "}
-            <span className="text-primary font-semibold">
-              corpcom@designcafe.com
-            </span>
-          </p>
-          <p>
-            For Others:
-            <span className="text-primary font-semibold">
-              corpcom@designcafe.com
-            </span>
-          </p>
+      <div className="md:flex md:justify-center md:w-4/5 md:mx-auto md:mt-20">
+        <div className="py-10 md:w-1/2 ">
+          <h2 className="text-xl font-bold px-5">Contact Us</h2>
+          <div className="text-center mx-auto w-3/4 mt-10 md:text-left">
+            <p className="font-semibold">We'd love to hear from you</p>
+            <p className="mt-3">
+              Whether your query is about features, materials, pricing or
+              anything else, our team is ready to answer all your questions.
+            </p>
+            <p className="mt-10">
+              For Press:{" "}
+              <span className="text-primary font-semibold">
+                corpcom@designcafe.com
+              </span>
+            </p>
+            <p>For Business Partnerships</p>
+            <p className="text-primary font-semibold">corpcom@designcafe.com</p>
+            <p>
+              For Jobs:{" "}
+              <span className="text-primary font-semibold">
+                corpcom@designcafe.com
+              </span>
+            </p>
+            <p>
+              For Others:
+              <span className="text-primary font-semibold">
+                corpcom@designcafe.com
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="mt-6">
-        <div className="w-5/6 mx-auto">
-          <label htmlFor="fullName" className="block">
-            Full Name*
-          </label>
-          <input
-            type="text"
-            placeholder="Rxxx Sxxx"
-            className="outline-none bg-secondary p-2 w-full rounded-lg"
-          />
+        <div className="mt-6 md:w-1/2">
+          <div className="w-5/6 mx-auto md:w-full">
+            <label htmlFor="fullName" className="block">
+              Full Name*
+            </label>
+            <input
+              type="text"
+              placeholder="Rxxx Sxxx"
+              className="outline-none bg-secondary p-2 w-full rounded-lg"
+            />
+          </div>
+          <div className="w-5/6 mx-auto mt-4  md:w-full">
+            <label htmlFor="mobileNo" className="block">
+              Mobile No*
+            </label>
+            <input
+              type="tel"
+              placeholder="9xxxxxx"
+              className="outline-none bg-secondary p-2 w-full rounded-lg"
+            />
+          </div>
+          <div className="w-5/6 mx-auto mt-4  md:w-full">
+            <label htmlFor="email" className="block">
+              Email Id*
+            </label>
+            <input
+              type="email"
+              placeholder="Email Id"
+              className="outline-none bg-secondary p-2 w-full rounded-lg"
+            />
+          </div>
+          <div className="w-5/6 mx-auto mt-4  md:w-full">
+            <label htmlFor="mobileNo" className="block">
+              Select Location*
+            </label>
+            <select
+              name=""
+              id=""
+              className="outline-none bg-secondary p-2 w-full rounded-lg"
+            >
+              <option value="">Select Location*</option>
+              <option value="">Bengaluru</option>
+              <option value="">Hyderabad</option>
+              <option value="">Chennai</option>
+              <option value="">Mumbai</option>
+              <option value="">Navi Mumbai</option>
+            </select>
+          </div>
+          <div className="w-5/6 mx-auto mt-4  md:w-full">
+            <label htmlFor="mobileNo" className="block">
+              Message
+            </label>
+            <textarea
+              placeholder="9xxxxxx"
+              rows={5}
+              className="outline-none resize-none bg-secondary p-2 w-full rounded-lg"
+            ></textarea>
+          </div>
+          <div className="w-5/6 mx-auto mt-4  md:w-full">
+            <button className="py-2 w-full bg-primary text-white rounded-lg">
+              Submit
+            </button>
+          </div>{" "}
         </div>
-        <div className="w-5/6 mx-auto mt-4">
-          <label htmlFor="mobileNo" className="block">
-            Mobile No*
-          </label>
-          <input
-            type="tel"
-            placeholder="9xxxxxx"
-            className="outline-none bg-secondary p-2 w-full rounded-lg"
-          />
-        </div>
-        <div className="w-5/6 mx-auto mt-4">
-          <label htmlFor="email" className="block">
-            Email Id*
-          </label>
-          <input
-            type="email"
-            placeholder="Email Id"
-            className="outline-none bg-secondary p-2 w-full rounded-lg"
-          />
-        </div>
-        <div className="w-5/6 mx-auto mt-4">
-          <label htmlFor="mobileNo" className="block">
-            Select Location*
-          </label>
-          <select
-            name=""
-            id=""
-            className="outline-none bg-secondary p-2 w-full rounded-lg"
-          >
-            <option value="">Select Location*</option>
-            <option value="">Bengaluru</option>
-            <option value="">Hyderabad</option>
-            <option value="">Chennai</option>
-            <option value="">Mumbai</option>
-            <option value="">Navi Mumbai</option>
-          </select>
-        </div>
-        <div className="w-5/6 mx-auto mt-4">
-          <label htmlFor="mobileNo" className="block">
-            Message
-          </label>
-          <textarea
-            placeholder="9xxxxxx"
-            rows={5}
-            className="outline-none resize-none bg-secondary p-2 w-full rounded-lg"
-          ></textarea>
-        </div>
-        <div className="w-5/6 mx-auto mt-4">
-          <button className="py-2 w-full bg-primary text-white rounded-lg">
-            Submit
-          </button>
-        </div>{" "}
       </div>
 
       <div className="mt-10 px-7">
