@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import { Collapse, IconButton, Typography } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 function NavList() {
   return (
@@ -14,12 +14,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          to="/projects"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Pages
-        </a>
+          Recent Projects
+        </Link>
       </Typography>
       <hr className="border-primary lg:hidden" />
       <Typography
@@ -28,12 +28,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          to="/contact"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Account
-        </a>
+          Contact Us
+        </Link>
       </Typography>
       <hr className="border-primary lg:hidden" />
 
@@ -43,29 +43,13 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <Link
+          to="/interior-design"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Blocks
-        </a>
+          Design Gallery
+        </Link>
       </Typography>
-      <hr className="border-primary lg:hidden" />
-
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Docs
-        </a>
-      </Typography>
-      <hr className="border-primary lg:hidden" />
 
       <div className="hidden lg:block">
         <FaWhatsapp />
