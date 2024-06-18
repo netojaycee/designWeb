@@ -51,6 +51,20 @@ function NavList() {
         </Link>
       </Typography>
 
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link
+          to="/about"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
+          About Us
+        </Link>
+      </Typography>
+
       <div className="hidden lg:block">
         <FaWhatsapp />
       </div>
