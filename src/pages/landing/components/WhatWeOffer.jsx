@@ -17,12 +17,12 @@ export default function WhatWeOffer() {
         </div>
 
         <div className="w-3/4 mx-auto mt-16">
-          <img src={Bedroom} alt="" className="h-96 " />
+          <img src={Bedroom} alt="" className="h-96 md:h-[420px] md:w-1/2 " />
           <p className="text-center bg-white py-7 text-black">SS Decoratives</p>
         </div>
       </div>
 
-      <div className="px-4 py-5">
+      <div className="px-4 py-5 md:w-2/3 md:mx-auto">
         <div>
           <img src={QualityWork} alt="" className="w-5/6 mx-auto" />
           <p className="text-brown-500 font-semibold mt-10">

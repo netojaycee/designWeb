@@ -28,7 +28,7 @@ export default function About() {
         </h2>
       </div>
 
-      <div className="mx-auto w-full mt-[60px] mb-5 md:w-2/3 ">
+      <div className="mx-auto w-full mt-[60px] mb-5 md:w-2/3 text-center md:text-left">
         <div className="px-10">
           <p className="text-primary text-lg">GET TO KNOW US</p>
           <h2 className="text-3xl font-bold font-sans">
@@ -46,9 +46,9 @@ export default function About() {
           </p>
         </div>
 
-        <div className="md:flex">
-          <div className="px-10 mt-8 text-left w-3/4">
-            <h2 className="font-bold text-lg flex space-x-2">
+        <div className="md:flex ">
+          <div className="px-10 mt-8 text-center md:text-left w-3/4 mx-auto">
+            <h2 className="font-bold text-lg flex justify-center items-center md:justify-start space-x-2">
               {" "}
               <HiCheckCircle className="size-7" /> Quality Material
             </h2>
@@ -58,8 +58,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="px-10 mt-8 text-left w-3/4">
-            <h2 className="font-bold text-lg flex space-x-2">
+          <div className="px-10 mt-8 text-center md:text-left w-3/4 mx-auto">
+            <h2 className="font-bold text-lg flex justify-center items-center md:justify-start space-x-2">
               <HiCheckCircle className="size-7" />
               Professional Team
             </h2>
