@@ -50,6 +50,7 @@ function NavList() {
           Design Gallery
         </Link>
       </Typography>
+      <hr className="border-primary lg:hidden" />
 
       <Typography
         as="li"
