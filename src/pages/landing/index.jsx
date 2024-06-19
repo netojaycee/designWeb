@@ -10,6 +10,8 @@ import Testimonial from "./components/Testimonial";
 import Suppliers from "./components/Suppliers";
 import Designers from "./components/Designers";
 import Guides from "./components/Guides";
+import About from "../about";
+import WhatWeOffer from "./components/WhatWeOffer";
 
 export default function Landing() {
   const [open, setOpen] = React.useState(false);
@@ -31,6 +33,8 @@ export default function Landing() {
       <Suppliers />
       <Designers />
       <Guides />
+      <WhatWeOffer />
+      <About />
       <BookingModal open={open} setOpen={setOpen} handleOpen={handleOpen} />
     </>
   );
