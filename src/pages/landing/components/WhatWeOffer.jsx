@@ -1,3 +1,9 @@
+import {
+  HiInformationCircle,
+  HiLightBulb,
+  HiOutlineLightBulb,
+  HiUserCircle,
+} from "react-icons/hi";
 import Bedroom from "../../../assets/images/bedroom1.jpg";
 import QualityWork from "../../../assets/images/quality-work-img-1.png";
 
@@ -16,9 +22,35 @@ export default function WhatWeOffer() {
           </div>
         </div>
 
-        <div className="w-3/4 mx-auto mt-16">
-          <img src={Bedroom} alt="" className="h-96 md:h-[420px] md:w-1/2 " />
+        <div className="w-[95%] md:w-3/4 mx-auto mt-16">
+          <img
+            src={Bedroom}
+            alt=""
+            className="h-[480px] md:h-[420px] md:w-1/2 "
+          />
           <p className="text-center bg-white py-7 text-black">SS Decoratives</p>
+        </div>
+
+        <div className="w-[95%] md:w-3/4 mx-auto mt-10">
+          <img
+            src={Bedroom}
+            alt=""
+            className="h-[480px] md:h-[420px] md:w-1/2 "
+          />
+          <p className="text-center bg-white py-7 text-black">
+            Laser Cutting SS Wall
+          </p>
+        </div>
+
+        <div className="w-[95%] md:w-3/4 mx-auto mt-16">
+          <img
+            src={Bedroom}
+            alt=""
+            className="h-[480px] md:h-[420px] md:w-1/2 "
+          />
+          <p className="text-center bg-white py-7 text-black">
+            Laser Cut MS Ceiling
+          </p>
         </div>
       </div>
 
@@ -37,11 +69,37 @@ export default function WhatWeOffer() {
           <hr className="border-[1.5px] border-black w-[1%] " />
         </div>
         <div className="mt-8">
-          <p className="text-brown-500 text-lg italic">
+          <p className="text-brown-500 text-lg font-semibold italic">
             We make these products from premium quality material, so that
             customers would not face any problem due to bad quality products.
             Products offered by us are widely demanded because of their high
             standards of quality .
+          </p>
+        </div>
+        <div className="flex space-x-6  items-center font-medium mt-10">
+          <div className="rounded-full bg-brown-600 size-20">
+            <HiOutlineLightBulb className="size-14 text-white mx-auto mt-2" />
+          </div>
+          <div className="flex flex-col space-y-2">
+            <p>Innovative</p>
+            <p>Latest Technology</p>
+          </div>
+        </div>
+
+        <div className="flex space-x-6  items-center font-medium mt-6">
+          <div className="rounded-full bg-brown-600 size-20">
+            <HiUserCircle className="size-14 text-white mx-auto mt-3" />
+          </div>
+          <div className="flex flex-col space-y-2">
+            <p>High Customer</p>
+            <p>Satisfaction</p>
+          </div>
+        </div>
+        <div className="mt-14">
+          <p className="text-lg  ">
+            Our clients like the quality of our services and have helped us to
+            grow by providing recurring orders.They also have referred us to
+            many of their allies which have enabled us to improve our business.
           </p>
         </div>
       </div>
