@@ -7,16 +7,18 @@ export default function MyAbout({ banner }) {
   return (
     <div>
       {!banner && (
-        <div className="relative text-center">
-          <div className=" text-white">
-            <img src={who} alt="" className="h-72 w-full relative md:h-96" />
-            <p className="absolute left-48 bottom-1/2 text-sm font-semibold md:left-1/2">
-              HOME / ABOUT US
-            </p>
-            <h2 className="absolute left-44 top-1/2 text-4xl font-semibold md:left-[48%]">
-              About Us
-            </h2>
-          </div>
+        <div className="py-40 bg-neutral-400 w-full h-60 relative text-white">
+          <img
+            src={who}
+            alt=""
+            className="w-full h-72 md:h-[300px] absolute top-0"
+          />
+          <p className="text-center absolute top-1/4 right-0 left-0 font-bold">
+            HOME / ABOUT US
+          </p>
+          <h2 className="text-center font-normal text-6xl fonts-nicky absolute top-1/3 left-0 right-0">
+            About Us
+          </h2>
         </div>
       )}
       <div className="mx-auto w-full mt-10 mb-5 md:w-2/3 text-center md:text-left">
