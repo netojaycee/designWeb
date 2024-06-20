@@ -32,11 +32,11 @@ export default function MyAbout({ banner }) {
           </p>
 
           <div className="w-4/5 mt-5">
-            <div className="border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600 rounded-r-full">
+            <div className="border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600  rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
               <HiTranslate className="size-10" />
               <p>Smart & Unique Wall Work</p>
             </div>
-            <div className="mt-5 border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600 rounded-r-full">
+            <div className="mt-5 border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600 rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
               <HiBriefcase className="size-10" />
               <p>The Best Quality Standards</p>
             </div>
@@ -102,22 +102,26 @@ export default function MyAbout({ banner }) {
           </motion.div>
         </motion.div>
 
-        <div className="text-center w-4/5  text-white bg-brown-400 py-10  mx-auto rounded-r-[78px] rounded-bl-[78px] rounded-tl-none md:flex md:flex-col md:w-2/3 md:items-center">
-          <h2 className=" text-2xl font-bold font-sans">Join Our Newsletter</h2>
-          <p className="w-3/4 mx-auto mt-4">
-            Signup to our Newsletter to get the latest updates.
-          </p>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            name="email"
-            id="email"
-            className="py-3 px-2 mt-8 w-4/5"
-          />
-          <button className="bg-black text-white py-2 px-4 font-sans text-sm mt-5">
-            Subscribe
-          </button>
-        </div>
+        {!banner && (
+          <div className="text-center w-4/5  text-white bg-brown-400 py-10  mx-auto rounded-r-[78px] rounded-bl-[78px] rounded-tl-none md:flex md:flex-col md:w-2/3 md:items-center">
+            <h2 className=" text-2xl font-bold font-sans">
+              Join Our Newsletter
+            </h2>
+            <p className="w-3/4 mx-auto mt-4">
+              Signup to our Newsletter to get the latest updates.
+            </p>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              id="email"
+              className="py-3 px-2 mt-8 w-4/5"
+            />
+            <button className="bg-black text-white py-2 px-4 font-sans text-sm mt-5">
+              Subscribe
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
