@@ -87,8 +87,18 @@ export default function Testimonial() {
         <div className="slider-container p-2">
           <Slider {...settings}>
             {data.map((item, index) => (
-              <div className="bg-white shadow-md rounded-md max-w-[300px]">
-                <img class="img-fluid owl-lazy lazyloaded entered" width="auto" height="auto" data-lazy-src="https://img.youtube.com/vi/dTN3a9ES2f0/mqdefault.jpg" src="https://img.youtube.com/vi/dTN3a9ES2f0/mqdefault.jpg" data-ll-status="loaded" />          
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-md max-w-[300px]"
+              >
+                <img
+                  class="img-fluid owl-lazy lazyloaded entered"
+                  width="auto"
+                  height="auto"
+                  data-lazy-src="https://img.youtube.com/vi/dTN3a9ES2f0/mqdefault.jpg"
+                  src="https://img.youtube.com/vi/dTN3a9ES2f0/mqdefault.jpg"
+                  data-ll-status="loaded"
+                />
                 {/* <video controls>
                   <source
                     src={item.videoUrl}
@@ -111,12 +121,6 @@ export default function Testimonial() {
               </div>
             ))}
           </Slider>
-        </div>
-
-        <div className="flex items-center justify-center">
-          <button className="underline bg-transparent text-primary text-[14px] lg:text-[20px]">
-            View All Customers Reviews{">"}
-          </button>
         </div>
       </div>
     </>

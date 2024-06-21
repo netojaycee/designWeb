@@ -23,7 +23,7 @@ export default function MyAbout({ banner }) {
       )}
       <div className="mx-auto w-full mt-10 mb-5 md:w-2/3 text-center md:text-left">
         <div className="px-10">
-          <p className="text-primary text-lg">GET TO KNOW US</p>
+          <p className="text-primary text-lg">ABOUT GLOBAL CREATION</p>
           <h2 className="text-3xl font-bold font-sans">
             We're Providing Best Quality Decorative Wall Application
           </h2>

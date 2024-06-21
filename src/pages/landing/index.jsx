@@ -29,14 +29,14 @@ export default function Landing() {
       <HomeInterior />
       <HomesDelivered />
       <PopularDesigns />
+      <MyAbout banner={Boolean} />
+      <WhatWeOffer />
       {/* <Banner /> */}
       <Why />
-      <Testimonial />
-      <Suppliers />
       {/* <Designers /> */}
       {/* <Guides /> */}
-      <WhatWeOffer />
-      <MyAbout banner={Boolean} />
+      <Testimonial />
+      <Suppliers />
       <BookingModal open={open} setOpen={setOpen} handleOpen={handleOpen} />
     </>
   );

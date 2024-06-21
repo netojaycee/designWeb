@@ -26,7 +26,7 @@ export default function WhatWeOffer() {
           <img
             src={Bedroom}
             alt=""
-            className="h-[480px] md:h-[420px] md:w-1/2 "
+            className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2 "
           />
           <p className="text-center bg-white py-7 text-black">SS Decoratives</p>
         </div>
@@ -35,7 +35,7 @@ export default function WhatWeOffer() {
           <img
             src={Bedroom}
             alt=""
-            className="h-[480px] md:h-[420px] md:w-1/2 "
+            className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2 "
           />
           <p className="text-center bg-white py-7 text-black">
             Laser Cutting SS Wall
@@ -46,7 +46,7 @@ export default function WhatWeOffer() {
           <img
             src={Bedroom}
             alt=""
-            className="h-[480px] md:h-[420px] md:w-1/2 "
+            className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2 "
           />
           <p className="text-center bg-white py-7 text-black">
             Laser Cut MS Ceiling
@@ -60,7 +60,7 @@ export default function WhatWeOffer() {
           <p className="text-brown-500 font-semibold mt-10">
             INTERIOR DESIGNING
           </p>
-          <h2 className="font-extrabold text-3xl italic font-[Playfair_SC]">
+          <h2 className=" text-3xl italic font-[Playfair_SC]">
             Quality Work That Meets Your Expectations
           </h2>
         </div>
