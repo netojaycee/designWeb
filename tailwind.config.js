@@ -8,6 +8,13 @@ module.exports = withMT({
         primary: "#189BA6",
         secondary: "#F8F8F8",
       },
+      keyframes: {
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-8%)",
+          },
+        },
+      },
     },
   },
   plugins: [],

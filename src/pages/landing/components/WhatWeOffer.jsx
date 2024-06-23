@@ -10,7 +10,7 @@ import QualityWork from "../../../assets/images/quality-work-img-1.png";
 export default function WhatWeOffer() {
   return (
     <>
-      <div className="bg-gray-800 pb-16">
+      <div className="bg-gray-800 pb-16 mt-20">
         <div className="text-white pt-10 text-center">
           <p className="text-sm">OUR PRODUCTS</p>
           <h2 className="text-4xl italic font-[Nicky] font-bold ">
