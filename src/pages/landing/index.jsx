@@ -4,12 +4,12 @@ import { BookingModal } from "../../components/BookingModal";
 import HomeInterior from "./components/HomeInterior";
 import HomesDelivered from "./components/HomesDelivered";
 import PopularDesigns from "./components/PopularDesigns";
-import Banner from "./components/Banner";
+// import Banner from "./components/Banner";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
 import Suppliers from "./components/Suppliers";
-import Designers from "./components/Designers";
-import Guides from "./components/Guides";
+// import Designers from "./components/Designers";
+// import Guides from "./components/Guides";
 
 import WhatWeOffer from "./components/WhatWeOffer";
 import MyAbout from "../about/components/MyAbout";

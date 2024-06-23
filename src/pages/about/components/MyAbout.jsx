@@ -7,7 +7,6 @@ import {
   HiViewList,
 } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { RocketLaunchIcon } from "@heroicons/react/16/solid";
 
 export default function MyAbout({ banner }) {
   return (

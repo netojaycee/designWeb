@@ -1,9 +1,4 @@
-import {
-  HiInformationCircle,
-  HiLightBulb,
-  HiOutlineLightBulb,
-  HiUserCircle,
-} from "react-icons/hi";
+import { HiOutlineLightBulb, HiUserCircle } from "react-icons/hi";
 import Bedroom from "../../../assets/images/bedroom1.jpg";
 import QualityWork from "../../../assets/images/quality-work-img-1.png";
 
