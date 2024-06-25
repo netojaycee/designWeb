@@ -15,7 +15,7 @@ export default function Footer() {
                 <p className=" mt-1">
                   Vidryaranyapura, Bengaluru, Karnataka 560097, India.
                 </p>
-                <div className="  my-2 flex  flex-col space-y-2  mx-auto">
+                <div className="  my-2 flex  flex-col items-center justify-center space-y-2  mx-auto">
                   <a
                     href="tel:+918496847337"
                     className="flex items-center space-x-3"

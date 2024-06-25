@@ -28,9 +28,9 @@ export default function MyAbout({ banner }) {
         </div>
       )}
       <div className="mx-auto w-full mt-10 mb-5 md:w-2/3 lg:w-[95%] text-center md:text-left lg:mt-48">
-        <div className="lg:flex lg:space-x-14">
-          <div className="lg:w-[50%]">
-            <div className="px-10">
+        <div className="lg:flex ">
+          <div className="lg:w-[100%]">
+            <div className="px-10 lg:mt-16">
               <p className="text-primary text-lg">ABOUT GLOBAL CREATION</p>
               <h2 className="text-3xl font-bold font-sans">
                 We're Providing Best Quality Decorative Wall Application
@@ -39,12 +39,12 @@ export default function MyAbout({ banner }) {
                 30+ Years of Experience
               </p>
 
-              <div className="w-4/5 mt-5">
-                <div className="border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600  rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
+              <div className="w-4/5 mt-5 lg:flex lg:mt-10 lg:space-x-8 ">
+                <div className="lg:w-[50%]  border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600  rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
                   <HiTranslate className="size-10" />
                   <p>Smart & Unique Wall Work</p>
                 </div>
-                <div className="mt-5 border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600 rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
+                <div className="lg:w-[50%] lg:mt-0  mt-5 border-2 border-l-4 px-6 py-5 flex items-center space-x-2 font-semibold border-brown-600 rounded-r-full cursor-pointer hover:animate-pulse hover:bg-brown-600 hover:text-white">
                   <HiBriefcase className="size-10" />
                   <p>The Best Quality Standards</p>
                 </div>
@@ -118,7 +118,7 @@ export default function MyAbout({ banner }) {
               </motion.div>
             </div>
           ) : (
-            <div>
+            <div className="lg:w-[90%]">
               <motion.div className="py-10 md:relative mt-10">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
@@ -132,11 +132,11 @@ export default function MyAbout({ banner }) {
                   }}
                   className="md:flex md:flex-row-reverse md:justify-center md:items-center"
                 >
-                  <div className="size-64 animate-bounce bg-brown-50 rounded-[57px] absolute -z-50 -top-10 -left-20 lg:rounded-tl-none lg:left-24"></div>
+                  <div className="size-64 animate-bounce bg-brown-50 rounded-[57px] absolute -z-50 -top-10 -left-20 lg:rounded-tl-none lg:left-5"></div>
                   <img
                     src={img2}
                     alt=""
-                    className="w-[95%] h-[550px] lg:w-[60%] lg:h-[680px] rounded-tr-[48px] rounded-bl-[48px] mx-auto lg:mx-0"
+                    className="w-[95%] h-[550px] lg:w-[83%] lg:h-[680px] rounded-tr-[48px] rounded-bl-[48px] mx-auto lg:mx-0"
                   />
                   <img
                     src={who}
