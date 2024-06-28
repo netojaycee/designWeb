@@ -1,10 +1,85 @@
-import { ListBulletIcon, UserGroupIcon } from "@heroicons/react/16/solid";
+import {
+  ArrowUpRightIcon,
+  ListBulletIcon,
+  UserGroupIcon,
+} from "@heroicons/react/16/solid";
+import { useState } from "react";
 import { HiOutlineLightBulb, HiUserCircle } from "react-icons/hi";
 import { RiPriceTagLine, RiVipCrownLine } from "react-icons/ri";
+import Slider from "react-slick";
 import Bedroom from "../../../assets/images/bedroom1.jpg";
 import QualityWork from "../../../assets/images/quality-work-img-1.png";
 
 export default function WhatWeOffer() {
+  const [show, setShow] = useState(false);
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 700,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
+
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const data = [
+    {
+      title: "Professional Interior",
+      message: "The Interior professional workers available in the xinterio",
+      image: Bedroom,
+    },
+    {
+      title: "Interior Work Plan",
+      message: "The Interior professional workers available in the xinterio",
+      image: Bedroom,
+    },
+    {
+      title: "Transforming Rooms",
+      message: "The Interior professional workers available in the xinterio",
+      image: Bedroom,
+    },
+    {
+      title: "Weaving Dreams",
+      message: "The Interior professional workers available in the xinterio",
+      image: Bedroom,
+    },
+    {
+      title: "Interior Decorator",
+      message: "The Interior professional workers available in the xinterio",
+      image: Bedroom,
+    },
+  ];
+
   return (
     <>
       <div className="px-3 mt-16 relative">
@@ -34,55 +109,69 @@ export default function WhatWeOffer() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 pb-16 -mt-20 lg:h-[560px]">
+      <div className="bg-gray-800 pb-16 -mt-20 rounded-3xl">
         <div className="text-white pt-32 text-center ">
-          <p className="text-sm">OUR PRODUCTS</p>
-          <h2 className="text-4xl italic font-[Nicky] font-bold ">
-            What We Offer
-          </h2>
+          <div className="flex space-x-3 items-center justify-center">
+            <div className="bg-brown-200 w-2 h-4 rounded-l-full"></div>
+            <p className="text-sm text-brown-200 ">WHAT WE DO</p>
+          </div>
+          <h2 className="text-3xl  font-bold ">What we offer for you</h2>
           <div className="flex justify-center items-center space-x-3 mt-1">
             <hr className="border-2 border-brown-500 w-1/12" />
             <hr className="border-2 border-white w-[1%] " />
           </div>
         </div>
 
-        <div className="lg:flex lg:space-x-10 lg:px-10 lg:relative ">
-          <div className="w-[95%] md:w-3/4 mx-auto mt-16 ">
-            <img
-              src={Bedroom}
-              alt=""
-              className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2  lg:w-full"
-            />
-            <p className="text-center bg-white py-7 text-black">
-              SS Decoratives
-            </p>
-          </div>
+        <div className=" md:px-10">
+          <Slider {...settings}>
+            {data.map((item, index) => (
+              <div
+                key={index}
+                onMouseEnter={() => setShow((open) => !open)}
+                className="w-[82%] md:w-3/4 mx-auto mt-16 relative "
+              >
+                <img
+                  src={item.image}
+                  alt=""
+                  className="h-[450px] rounded-3xl hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px]   lg:w-full"
+                />
+                <div>
+                  <div className="absolute bottom-6 left-2">
+                    <p className="text-white text-2xl font-semibold hover:text-brown-500">
+                      {item.title}
+                    </p>
+                    <p
+                      className={
+                        show
+                          ? "w-2/3  text-white block"
+                          : "w-2/3  text-white hidden"
+                      }
+                    >
+                      {item.message}{" "}
+                    </p>
+                  </div>
 
-          <div className="w-[95%] md:w-3/4 mx-auto mt-16">
-            <img
-              src={Bedroom}
-              alt=""
-              className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2 lg:w-full"
-            />
-            <p className="text-center bg-white py-7 text-black">
-              Laser Cutting SS Wall
-            </p>
-          </div>
+                  <div className="absolute right-2 bottom-2  bg-white size-14 mx-auto flex justify-center items-center rounded-full hover:bg-brown-400 hover:text-white">
+                    <ArrowUpRightIcon className="size-9" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
 
-          <div className="w-[95%] md:w-3/4 mx-auto mt-16">
-            <img
-              src={Bedroom}
-              alt=""
-              className="h-[480px] hover:opacity-5 hover:transition-opacity hover:ease-in-out  hover:duration-1000 md:h-[420px] md:w-1/2 lg:w-full"
-            />
-            <p className="text-center bg-white py-7 text-black">
-              Laser Cut MS Ceiling
+          <div className="border w-[93%]  mx-auto py-4 rounded-full mt-8 md:w-2/3 ">
+            <p className="text-brown-100 w-5/6 mx-auto text-center md:flex md:justify-center">
+              Need more services based on your demand?{" "}
+              <span className="text-brown-300  hidden md:flex md:px-3">
+                Contact us
+              </span>
             </p>
+            <p className="text-brown-300 text-center md:hidden">Contact us</p>
           </div>
         </div>
       </div>
 
-      <div className="px-4 py-5 md:w-2/3 md:mx-auto lg:bg-brown-50 lg:w-full lg:flex lg:pt-72">
+      {/* <div className="px-4 py-5 md:w-2/3 md:mx-auto lg:bg-brown-50 lg:w-full lg:flex lg:pt-72">
         <div className="lg:w-[60%] lg:relative">
           <img
             src={Bedroom}
@@ -144,7 +233,7 @@ export default function WhatWeOffer() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
