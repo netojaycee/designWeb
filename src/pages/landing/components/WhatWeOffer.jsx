@@ -4,11 +4,10 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/16/solid";
 import { useState } from "react";
-import { HiOutlineLightBulb, HiUserCircle } from "react-icons/hi";
+
 import { RiPriceTagLine, RiVipCrownLine } from "react-icons/ri";
 import Slider from "react-slick";
 import Bedroom from "../../../assets/images/bedroom1.jpg";
-import QualityWork from "../../../assets/images/quality-work-img-1.png";
 
 export default function WhatWeOffer() {
   const [show, setShow] = useState(false);
